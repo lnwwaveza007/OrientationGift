@@ -44,7 +44,7 @@ input[type=text] {
 <body>
   <div id="typedtext"></div>
   <br>
-  <input type="text" id="code" name="secretcode" placeholder="กรอกตรงนี้!"><br><br>
+  <input type="text" id="passcode" name="secretcode" placeholder="กรอกตรงนี้!"><br><br>
   <button type="button" id="buttonclick">ยืนยัน</button>
 </body>
 <script>
@@ -52,7 +52,7 @@ function randomIntFromInterval(min, max) { // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 // set up text to print, each item in array is new line
-var source = document.getElementById('code');
+var source = document.getElementById("passcode");
 
 const inputHandler = function(e) {
   rndInt = randomIntFromInterval(1, 3)
