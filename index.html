@@ -52,7 +52,7 @@ function randomIntFromInterval(min, max) { // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 // set up text to print, each item in array is new line
-const source = document.getElementById('code');
+var source = document.getElementById('code');
 
 const inputHandler = function(e) {
   rndInt = randomIntFromInterval(1, 3)
