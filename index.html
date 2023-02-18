@@ -52,7 +52,6 @@ function randomIntFromInterval(min, max) { // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 // set up text to print, each item in array is new line
-var source = document.getElementById("passcode");
 
 const inputHandler = function(e) {
   rndInt = randomIntFromInterval(1, 3)
@@ -65,12 +64,12 @@ const inputHandler = function(e) {
   }
 }
 
-source.addEventListener('input', inputHandler);
+document.getElementById("passcode").addEventListener('input', inputHandler);
 //Pass Code
 var btn = document.getElementById('buttonclick').addEventListener("click", myFunction);
 
 function myFunction() {
-  if (source.value == "1"){
+  if (document.getElementById("passcode").value == "1"){
     window.location.href = "https://lnwwaveza007.github.io/OrientationGift/01";
   }
 }
